@@ -2,6 +2,7 @@ plugins {
     id "org.jetbrains.kotlin.jvm" version "1.4.10"
     id 'maven'
     id 'signing'
+    id("org.jetbrains.dokka") version "1.9.20"
 }
 
 group 'com.natpryce'
@@ -68,6 +69,10 @@ artifacts {
 signing {
     required { hasProperty("sign") || gradle.taskGraph.hasTask("uploadArchives") }
     sign configurations.archives
+}
+
+tasks.dokkaHtml {
+    outputDirectory.set(layout.projectDirectory.dir("docs/html"))
 }
 
 task ossrhAuthentication {
