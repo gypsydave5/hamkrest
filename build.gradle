@@ -72,7 +72,7 @@ signing {
 }
 
 tasks.dokkaHtml {
-    outputDirectory.set(layout.projectDirectory.dir("docs/html"))
+    outputDirectory.set(layout.projectDirectory.dir("docs/dokka"))
 }
 
 task ossrhAuthentication {

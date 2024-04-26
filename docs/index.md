@@ -1,11 +1,7 @@
-# Hello World
+# Hamkrest
 
 A reimplementation of [Hamcrest](https://hamcrest.org/) to take advantage of Kotlin language features.
 
-## Matchers
+- [Built In Matchers with Examples (wip)](matchers/)
 
-### Basic
-
-- [`equalTo`](matchers/equalTo.md)
-
-- [describe](describe.html)
+- [Dokka Documentation](dokka/)
